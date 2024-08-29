@@ -38,12 +38,53 @@ h1 {
 @media screen and (max-width: 1024px) {
     .team-container {
         grid-template-columns: repeat(2, 1fr);
+        /* Dos tarjetas por fila en pantallas medianas */
     }
 }
 
 @media screen and (max-width: 768px) {
     .team-container {
         grid-template-columns: 1fr;
+        /* Una tarjeta por fila en pantallas pequeñas */
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2.5em;
+        /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+    .member-card {
+        padding: 15px;
+        text-align: center;
+        /* Centra el texto en pantallas pequeñas */
+    }
+    .member-photo {
+        width: 150px;
+        /* Reduce el tamaño de la foto */
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .member-level {
+        font-size: 1.2em;
+        /* Reduce el tamaño del nivel */
+        top: -10px;
+        left: 10px;
+    }
+    .member-name {
+        font-size: 1.3em;
+        /* Ajusta el tamaño del nombre */
+    }
+    .quote,
+    .member-info,
+    .fav-game,
+    .fav-song {
+        font-size: 1em;
+        /* Ajusta el tamaño del texto */
+    }
+    .quote {
+        margin-bottom: 10px;
+    }
+    .member-info {
+        margin-bottom: 10px;
     }
 }
 
